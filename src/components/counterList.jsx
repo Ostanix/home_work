@@ -22,27 +22,25 @@ const CountersList = () => {
   };
 
   const handelIncrement = (id) => {
-    console.log('handelIncrement');
     setCounter(
       counters.map((counter) => {
         if (counter.id === id) {
           counter.value = counter.value + 1;
         }
 
-        return counter.value;
+        return counter;
       }),
     );
   };
 
   const handelDecrement = (id) => {
-    console.log('handelDecrement');
     setCounter(
       counters.map((counter) => {
         if (counter.id === id) {
           counter.value = counter.value - 1;
         }
 
-        return counter.value;
+        return counter;
       }),
     );
   };
