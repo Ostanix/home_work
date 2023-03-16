@@ -20,7 +20,7 @@ const Counter = (props) => {
       <button
         className='btn btn-primary btn-sm m-2'
         onClick={() => {
-          props.onIncrement(props.id, { value });
+          props.onIncrement(props.id);
         }}
       >
         +
@@ -28,7 +28,7 @@ const Counter = (props) => {
       <button
         className='btn btn-primary btn-sm m-2'
         onClick={() => {
-          props.onDecrement(props.id, { value });
+          props.onDecrement(props.id);
         }}
       >
         -
